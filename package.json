@@ -1,0 +1,24 @@
+{
+  "name": "docs-lint",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Documentation policy linter for the minimal-docs governance model (unchanging records / ADRs / ledgers / allowlisted living docs). Depends on nothing but Node built-ins.",
+  "type": "module",
+  "bin": {
+    "docs-lint": "./bin/docs-lint.mjs"
+  },
+  "main": "./lib/lint.mjs",
+  "exports": {
+    ".": "./lib/lint.mjs"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
